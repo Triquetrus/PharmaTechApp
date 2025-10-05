@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/L1"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentEnd="true"
+    android:background="#00FFFF"
+    android:orientation="vertical"
+    android:paddingTop="20dp"
+    tools:ignore="RtlSymmetry">
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/image1"
+        android:contentDescription="onbording1_image"
+        tools:ignore="HardcodedText"/>
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img1"
+        android:layout_marginTop="-4dp"
+        android:text="Add Product"
+        android:textColor="#142D4D"
+        android:textSize="28sp"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt1"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="Easily add new products to your inventory. Add all the important details of the product on one click."
+        android:textSize="18sp"
+        android:textColor="#142D4D"
+        tools:ignore="HardcodedText"/>
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="36dp"
+        android:layout_marginEnd="36dp"
+        android:backgroundTint="#000080"
+        android:text="Next"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:fontFamily="sans-serif-light"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="36dp"
+        android:layout_marginStart="36dp"
+        android:backgroundTint="#00FFFF"
+        android:text="Skip"
+        android:textSize="18sp"
+        android:textColor="#0000ff"
+        android:fontFamily="sans-serif-light"
+        tools:ignore="HardcodedText" />
+
+</RelativeLayout>

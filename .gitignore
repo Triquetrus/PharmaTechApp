@@ -1,0 +1,58 @@
+# Gradle files
+.gradle/
+build/
+**/build/
+
+# Local configuration files
+local.properties
+*.iml
+.idea/
+.gradle/
+.cxx/
+
+# Log files
+*.log
+
+# Android Studio specific
+captures/
+.externalNativeBuild/
+.navigation/
+*.apk
+*.ap_
+output.json
+
+# Keystore files (DO NOT UPLOAD THESE)
+*.jks
+*.keystore
+
+# Gradle caches
+.gradle/
+**/build/
+!gradle-wrapper.jar
+
+# Misc
+.DS_Store
+Thumbs.db
+
+# Jetpack Compose
+compose-cache/
+
+# NDK / CMake
+.cxx/
+*.cmake
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+
+# Generated
+app/release/
+app/debug/
+
+# Crashlytics and Firebase
+crashlytics-build.properties
+firebase/
+google-services.json

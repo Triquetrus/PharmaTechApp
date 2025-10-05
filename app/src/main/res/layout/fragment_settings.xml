@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".SettingsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="?android:attr/dividerVertical"
+        android:orientation="vertical"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:showDividers="middle">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="16dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:contentDescription="notifications"
+                android:src="@drawable/baseline_notifications_24"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="Notifications"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText" />
+
+            <Switch
+                android:id="@+id/switch_notifications1"
+                android:layout_width="50dp"
+                android:layout_height="50dp">
+            </Switch>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="16dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:contentDescription="language"
+                android:src="@drawable/baseline_language_24"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="Language"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText" />
+
+            <Spinner
+                android:id="@+id/spinner_language"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:entries="@array/languages" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="16dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:contentDescription="security"
+                android:src="@drawable/baseline_screen_lock_portrait_24"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="Security"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText" />
+
+            <Switch
+                android:id="@+id/switch_security"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="16dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:contentDescription="dark_mode"
+                android:src="@drawable/baseline_dark_mode_24"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="Dark Mode"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText" />
+
+            <Switch
+                android:id="@+id/switch_dark_mode"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+        </LinearLayout>
+
+        <!-- Privacy Policy -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="16dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:contentDescription="privacy_policy"
+                android:src="@drawable/baseline_security_24"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/text_privacy_policy"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="10dp"
+                android:text="Privacy Policy"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="18sp"
+                app:drawableEndCompat="@drawable/baseline_keyboard_arrow_right_24"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="16dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:contentDescription="about_us"
+                android:src="@drawable/baseline_info_outline_24"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/text_about_us"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="10dp"
+                android:text="About Us"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="18sp"
+                app:drawableEndCompat="@drawable/baseline_keyboard_arrow_right_24"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="16dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:contentDescription="about_us"
+                android:src="@drawable/baseline_logout_24"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/button_logout"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="10dp"
+                android:text="Logout"
+                android:textSize="18sp"
+                app:drawableEndCompat="@drawable/baseline_keyboard_arrow_right_24"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="16dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:contentDescription="about_us"
+                android:src="@drawable/baseline_power_settings_new_24"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/button_exit_app"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="10dp"
+                android:text="Exit App"
+                android:textSize="18sp"
+                app:drawableEndCompat="@drawable/baseline_keyboard_arrow_right_24"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D5DEEF"
+    android:elevation="12dp"
+    tools:context="HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp">
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:backgroundTint="#D5DEEF"
+            android:drawableEnd="@drawable/baseline_arrow_back_24"
+            app:layout_constraintBottom_toTopOf="@+id/cardView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.005"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            android:contentDescription="back"
+            tools:ignore="HardcodedText"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="1100dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="24dp"
+            android:foregroundGravity="center"
+            android:padding="30dp"
+            android:elevation="30dp"
+            app:cardCornerRadius="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <LinearLayout
+                android:id="@+id/LinearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#EDEDED"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:foreground="@drawable/custome_edittext"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent">
+
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Bill"
+                    android:textColor="#101E67"
+                    android:textSize="34sp"
+                    tools:ignore="HardcodedText" />
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/custome_edittext1"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/LinearLayout1">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:background="@color/white"
+                        app:cardCornerRadius="16dp">
+
+                        <EditText
+                            android:id="@+id/edt1"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:autofillHints="name"
+                            android:backgroundTint="@color/white"
+                            android:hint="Enter Store Name"
+                            android:inputType="textPersonName"
+                            android:paddingStart="16dp"
+                            android:paddingEnd="16dp"
+                            android:textColor="#000000"
+                            android:textSize="18sp"
+                            tools:ignore="HardcodedText"/>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:background="@color/white"
+                        app:cardCornerRadius="16dp">
+
+                        <EditText
+                            android:id="@+id/edt4"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:autofillHints="name"
+                            android:backgroundTint="@color/white"
+                            android:hint="Enter Customer Name"
+                            android:inputType="textPersonName"
+                            android:paddingStart="16dp"
+                            android:paddingEnd="16dp"
+                            android:textColor="#000000"
+                            android:textSize="18sp"
+                            tools:ignore="HardcodedText"/>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:background="@color/white"
+                        app:cardCornerRadius="16dp">
+
+                        <EditText
+                            android:id="@+id/edt2"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:autofillHints="name"
+                            android:backgroundTint="@color/white"
+                            android:hint="Enter Items Name"
+                            android:inputType="textPersonName"
+                            android:paddingStart="16dp"
+                            android:paddingEnd="16dp"
+                            android:textColor="#000000"
+                            android:textSize="18sp"
+                            tools:ignore="HardcodedText"/>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:background="@color/white"
+                        app:cardCornerRadius="16dp">
+
+                        <EditText
+                            android:id="@+id/edt3"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:autofillHints="name"
+                            android:backgroundTint="@color/white"
+                            android:hint="Enter Quantity"
+                            android:inputType="number"
+                            android:paddingStart="16dp"
+                            android:paddingEnd="16dp"
+                            android:textColor="#000000"
+                            android:textSize="18sp"
+                            tools:ignore="HardcodedText"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <Button
+                        android:id="@+id/btn1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:backgroundTint="#000080"
+                        android:fontFamily="sans-serif-light"
+                        android:text="Add Medicine"
+                        android:textColor="#FFFFFF"
+                        android:textSize="22sp"
+                        tools:ignore="HardcodedText">
+                    </Button>
+                    <Button
+                        android:id="@+id/btn2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:backgroundTint="#000080"
+                        android:fontFamily="sans-serif-light"
+                        android:text="Generate Bill"
+                        android:textColor="#FFFFFF"
+                        android:textSize="22sp"
+                        tools:ignore="HardcodedText">
+                    </Button>
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="500dp"
+                        android:background="@color/white"
+                        app:cardCornerRadius="16dp">
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="match_parent"
+                            android:layout_height="1000dp"
+                            android:hint="-----------------------Bill--------------------"
+                            android:text=""
+                            android:padding="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            tools:ignore="HardcodedText" />
+
+                    </androidx.cardview.widget.CardView>
+                    </ScrollView>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

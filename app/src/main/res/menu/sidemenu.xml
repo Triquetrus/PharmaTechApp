@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <group android:id="@+id/group_user_info">
+        <item
+            android:id="@+id/nav_user_info"
+            android:title="User Info"
+            android:icon="@drawable/baseline_person_24"
+            tools:ignore="HardcodedText" />
+    </group>
+
+    <!-- App Section -->
+    <group android:id="@+id/group_app">
+        <item
+            android:id="@+id/nav_app_version"
+            android:title="App Version"
+            android:icon="@drawable/baseline_info_outline_24"
+            tools:ignore="HardcodedText" />
+        <item
+            android:id="@+id/nav_check_update"
+            android:title="Check for Updates"
+            android:icon="@drawable/baseline_system_security_update_24"
+            tools:ignore="HardcodedText" />
+        <item
+            android:id="@+id/nav_share_app"
+            android:title="Share App"
+            android:icon="@drawable/baseline_share_24"
+            tools:ignore="HardcodedText" />
+    </group>
+
+    <item android:id="@+id/feedback_page"
+        android:title="Feedback Details"
+        android:icon="@drawable/baseline_feedback_24"
+        tools:ignore="HardcodedText" />
+</menu>

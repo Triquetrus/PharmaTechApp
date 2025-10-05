@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/L1"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentEnd="true"
+    android:background="#00FFFF"
+    android:orientation="vertical"
+    android:paddingTop="50dp"
+    tools:ignore="RtlSymmetry">
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hi,"
+        android:textColor="#142D4D"
+        android:textSize="36sp"
+        android:textStyle=""
+        android:paddingStart="20dp"
+        tools:ignore="HardcodedText">
+    </TextView>
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign up or Login here to continue"
+        android:textColor="#142D4D"
+        android:textSize="20sp"
+        android:textStyle=""
+        android:paddingStart="20dp"
+        tools:ignore="HardcodedText">
+    </TextView>
+
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:src="@drawable/img1"
+        android:contentDescription="login_image"
+        tools:ignore="HardcodedText">
+    </ImageView>
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center"
+        android:backgroundTint="#000080"
+        tools:ignore="HardcodedText"
+        android:layout_marginTop="10dp">
+    </Button>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(or)"
+        android:textSize="26sp"
+        android:textColor="#142D4D"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        tools:ignore="HardcodedText">
+    </TextView>
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="SIGN UP"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center"
+        android:backgroundTint="#000080"
+        tools:ignore="HardcodedText"
+        android:layout_marginTop="10dp">
+    </Button>
+</LinearLayout>
